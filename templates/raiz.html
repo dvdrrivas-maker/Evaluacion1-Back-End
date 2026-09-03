@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <h1>Presentación personal</h1>
+    </header>
+    <main class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 text-center">
+                <img src="{% static 'images/foto_año_de_la_pera2.jpeg' %}" alt="" class="foto rounded-circle" >
+                <p>{{mensaje}}, mi nombre es David Rodríguez. Soy estudiante de la carrera Analista Programador de Inacap Valdivia, cursando los ramos de Proyecto Integrado, Aplicaciones Moviles para IoT, Programación Back End, Ingeniería de Software y el electivo Tendencias de Inteligencia Artificial Aplicada. Tengo un interés profesional por las áreas de bases de datos, programación con python, inteligencia artificial y desarrollo web. En mi tiempo libre juego videojuegos y escribo de forma recreacional, también tengo interés en la esgrima histórica, mas no practico la disciplina.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
